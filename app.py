@@ -61,7 +61,7 @@ def player(name):
 
         # Connect to the database for the specific show
         conn2 = mysql.connector.connect(
-            user='animezone', password='c2cx7tp9tk', host='127.0.0.1', database=f'{namer}'
+            user='animezone', password='pass', host='127.0.0.1', database=f'{namer}'
         )
         cursor2 = conn2.cursor()
 
