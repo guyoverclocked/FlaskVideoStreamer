@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeZone - Unleash your inner Otaku!</title>
+    <link rel="icon" href="{{ url_for ('static', filename='img/title.png')}}" type="image/icon type">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{{ url_for ('static', filename='bootstrap.min.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='font-awesome.min.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='elegant-icons.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='plyr.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='nice-select.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='owl.carousel.min.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='slicknav.min.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='style.css')}}" type="text/css">
+</head>
+<body>
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+ <!-- Header Section Begin -->
+ <header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2">
+                <div class="header__logo">
+                    <a href="/">
+                        <img src="{{ url_for ('static', filename='img/logo2.png')}}" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="header__nav">
+                    <nav class="header__menu mobile-menu">
+                        <ul>
+                            <li class="active"><a href="/">Homepage</a></li>
+                            
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="header__right">
+                    <a href="#" class="search-switch"><span class="icon_search"></span></a>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+    </div>
+</header>
+<!-- Header End -->
+<!-- Hero Section Begin -->
+<section class="hero">
+    <div class="container">
+        <div class="hero__slider owl-carousel">
+            <div class="hero__items set-bg" data-setbg="https://wallpapercave.com/dwp1x/wp10727390.jpg">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="hero__text">
+                            <div class="label">Action</div>
+                            <h2>Dragon Ball Z</h2>
+                            <p>Five years after winning the World Martial Arts tournament...</p>
+                            <a href="/dragon_ball_z"><span>Watch Now</span> <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__items set-bg" data-setbg="https://www.wallpaperflare.com/static/672/578/501/manga-naruto-shippuuden-uzumaki-naruto-uchiha-sasuke-wallpaper.jpg">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="hero__text">
+                            <div class="label">Adventure</div>
+                            <h2>Naruto</h2>
+                            <p>Moments prior to Naruto Uzumaki's birth...</p>
+                            <a href="/naruto"><span>Watch Now</span> <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="hero__items set-bg" data-setbg="img/hero/hero-1.jpg">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="hero__text">
+                            <div class="label">Adventure</div>
+                            <h2>Fate / Stay Night: Unlimited Blade Works</h2>
+                            <p>After 30 days of travel across the world...</p>
+                            <a href="#"><span>Watch Now</span> <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</section>
+<!-- Hero Section End -->
+
+    <!-- Product Section Begin -->
+    <section class="product spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="trending__product">
+                        <div class="row">
+                            <div class="col-lg-8 col-md-8 col-sm-8">
+                                <div class="section-title">
+                                    <h4>Trending Now</h4>
+                                </div>
+                            </div>
+                            
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <a href="/dragon_ball_z">
+                                    <div class="product__item__pic set-bg" data-setbg="{{ url_for ('static', filename='img/dragon_ball_z.jpg')}}">
+                                        <div class="ep">9/10</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Active</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="/dragon_ball_z">Dragon Ball Z</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <a href="/naruto">
+                                    <div class="product__item__pic set-bg" data-setbg="{{ url_for ('static', filename='img/naruto.jpg')}}">
+                                        <div class="ep">9/10</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Active</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="/naruto">Naruto</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+			<div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <a href="/one_piece">
+                                    <div class="product__item__pic set-bg" data-setbg="{{ url_for ('static', filename='img/one_piece.jpg')}}">
+                                        <div class="ep">8/10</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Active</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="/one_piece">One Piece</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+			<div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <a href="/death_note">
+                                    <div class="product__item__pic set-bg" data-setbg="{{ url_for ('static', filename='img/death_note.jpg')}}">
+                                        <div class="ep">9/10</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Active</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="/death_note">Death Note</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+			<div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <a href="/attack_on_titan1">
+                                    <div class="product__item__pic set-bg" data-setbg="{{ url_for ('static', filename='img/attack_on_titan1.jpg')}}">
+                                        <div class="ep">8/10</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Active</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="/attack_on_titan1">Attack on Titan 1</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="page-up">
+            <a href="#" id="scrollToTopButton"><span class="arrow_carrot-up"></span></a>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer__logo">
+                        <a href="/"><img src="{{ url_for ('static', filename='img/logo2.png')}}" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="footer__nav">
+                        <ul>
+                            <li class="active"><a href="./index.html">Homepage</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This Website is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="/" target="_blank">AnimeZone</a>
+                      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+
+                  </div>
+              </div>
+          </div>
+      </footer>
+      <!-- Footer Section End -->
+
+      <!-- Search model Begin -->
+      <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch"><i class="icon_close"></i></div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search model end -->
+                            <script src="{{ url_for ('static', filename='js/jquery-3.3.1.min.js')}}"></script>
+                            <script src="{{ url_for ('static', filename='js/bootstrap.min.js')}}"></script>
+                            <script src="{{ url_for ('static', filename='js/player.js')}}"></script>
+                            <script src="{{ url_for ('static', filename='js/jquery.nice-select.min.js')}}"></script>
+                            <script src="{{ url_for ('static', filename='js/mixitup.min.js')}}"></script>
+                            <script src="{{ url_for ('static', filename='js/jquery.slicknav.js')}}"></script>
+                            <script src="{{ url_for ('static', filename='js/owl.carousel.min.js')}}"></script>
+                            <script src="{{ url_for ('static', filename='js/main.js')}}"></script>
+
+                        </body>
+</html>
